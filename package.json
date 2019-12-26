@@ -1,7 +1,7 @@
 {
   "name": "sim4me",
   "description": "Getting the amount of traffic from sim4me",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "shooontan",
   "dependencies": {
     "@babel/parser": "^7.7.7",
@@ -26,6 +26,7 @@
   ],
   "license": "MIT",
   "main": "dist/sim4me.js",
+  "repository": "shooontan/sim4me",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
