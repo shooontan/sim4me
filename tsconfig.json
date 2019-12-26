@@ -1,0 +1,18 @@
+{
+  "extends": "@shooontan/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es2018",
+    "lib": [
+      "es2018"
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "example",
+    "dist",
+    "**/__tests__/*.ts"
+  ]
+}

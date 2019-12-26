@@ -1,0 +1,35 @@
+{
+  "name": "sim4me",
+  "description": "Getting the amount of traffic from sim4me",
+  "version": "0.0.1",
+  "author": "shooontan",
+  "dependencies": {
+    "@babel/parser": "^7.7.7",
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.7.4",
+    "@shooontan/tsconfig": "0.0.1",
+    "@types/cheerio": "^0.22.15",
+    "@types/jest": "^24.0.24",
+    "@types/node": "^12.12.21",
+    "@types/request": "^2.48.4",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "main": "dist/sim4me.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "prebuild": "rm -rf dist",
+    "prebuild:watch": "rm -rf dist",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  }
+}

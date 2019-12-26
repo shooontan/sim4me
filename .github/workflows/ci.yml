@@ -1,0 +1,31 @@
+name: GitHub CI
+
+on: [push]
+
+jobs:
+  test:
+    name: Test on node 10
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set Node.js 10
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - name: Run
+        run: |
+          npm ci
+          npm test
+  build:
+    name: Build on node 10
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set Node.js 10
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - name: Build
+        run: |
+          npm ci
+          npm run build
