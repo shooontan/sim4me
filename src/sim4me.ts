@@ -18,12 +18,13 @@ export const traffic = async (
   opts: TrafficOpts,
   client: typeof request = request
 ): Promise<TrafficRes> => {
-  const { body: responseBody } = await client.postTraffic(opts);
-  if (typeof responseBody !== 'string' || !responseBody) {
+  const response = await client.postTraffic(opts);
+
+  if (typeof response !== 'string' || !response) {
     throw new Error('No Response.');
   }
 
-  const code = getScriptCode(responseBody as string);
+  const code = getScriptCode(response);
   if (!code) {
     throw new Error('No Script Code.');
   }

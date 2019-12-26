@@ -6,7 +6,8 @@
   "dependencies": {
     "@babel/parser": "^7.7.7",
     "cheerio": "^1.0.0-rc.3",
-    "request": "^2.88.0"
+    "form-data": "^3.0.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@babel/types": "^7.7.4",
@@ -14,8 +15,9 @@
     "@types/cheerio": "^0.22.15",
     "@types/jest": "^24.0.24",
     "@types/node": "^12.12.21",
-    "@types/request": "^2.48.4",
+    "@types/node-fetch": "^2.5.4",
     "jest": "^24.9.0",
+    "nock": "^11.7.0",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.4"
   },
